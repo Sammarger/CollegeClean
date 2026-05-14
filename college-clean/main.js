@@ -74,21 +74,26 @@
     const total = cards.length;
     let current = 1; // start at centre card
 
-    function getVisible() {
-      const w = wrapper.offsetWidth;
-      if (w < 600) return 1;
-      if (w < 900) return 2;
-      return 3;
-    }
-
     function cardWidth() {
       if (cards.length === 0) return 340;
       return cards[0].offsetWidth + 24; // card + gap
     }
 
     function updateCarousel() {
-      const vis = getVisible();
-      const offset = current * cardWidth() - (wrapper.offsetWidth / 2) + (cardWidth() / 2);
+      const cw = cardWidth();
+      const ww = wrapper.offsetWidth;
+      const totalWidth = total * cw - 24; // actual carousel width (no trailing gap)
+
+      let offset;
+      if (totalWidth <= ww) {
+        // All cards fit — center the row in the wrapper
+        offset = -Math.round((ww - totalWidth) / 2);
+      } else {
+        // Scroll to keep current card centered, clamped to valid range
+        offset = Math.round(current * cw - ww / 2 + (cw - 24) / 2);
+        offset = Math.max(0, Math.min(offset, totalWidth - ww));
+      }
+
       carousel.style.transform = `translateX(-${offset}px)`;
 
       cards.forEach((c, i) => {
