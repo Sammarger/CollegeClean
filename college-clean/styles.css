@@ -1095,6 +1095,21 @@ p { line-height: 1.7; }
   background: rgba(75,85,212,0.08);
 }
 
+/* Light tabs for dark (navy) section backgrounds */
+.ba-tab--light {
+  border-color: rgba(255,255,255,0.5);
+  color: var(--white);
+}
+.ba-tab--light.ba-tab--active {
+  background: var(--white);
+  color: var(--navy);
+  border-color: var(--white);
+}
+.ba-tab--light:not(.ba-tab--active):hover {
+  background: rgba(255,255,255,0.12);
+  border-color: rgba(255,255,255,0.8);
+}
+
 .ba-panel { display: none; }
 .ba-panel--active { display: block; }
 
@@ -1107,6 +1122,7 @@ p { line-height: 1.7; }
   gap: 16px;
 }
 .gallery-grid--3 { grid-template-columns: repeat(3, 1fr); }
+.gallery-grid--2 { grid-template-columns: repeat(2, 1fr); }
 
 .gallery-item {
   position: relative;

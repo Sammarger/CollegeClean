@@ -111,53 +111,99 @@
         <p style="opacity:0.7;font-size:0.95rem;max-width:520px;margin:0 auto;">Toggle between before and after to see the full scope of the work.</p>
       </div>
 
-      <!-- Tab toggle -->
-      <div class="ba-tabs" role="tablist" aria-label="Before and after views">
-        <button class="ba-tab ba-tab--active" role="tab" aria-selected="true" aria-controls="bathroom-before" id="tab-before" data-target="bathroom-before">Before</button>
-        <button class="ba-tab" role="tab" aria-selected="false" aria-controls="bathroom-after" id="tab-after" data-target="bathroom-after">After</button>
-      </div>
+      <div class="ba-tab-group">
+        <!-- Tab toggle -->
+        <div class="ba-tabs" role="tablist" aria-label="Before and after views">
+          <button class="ba-tab ba-tab--active" role="tab" aria-selected="true" aria-controls="bathroom-before" id="tab-before" data-target="bathroom-before">Before</button>
+          <button class="ba-tab" role="tab" aria-selected="false" aria-controls="bathroom-after" id="tab-after" data-target="bathroom-after">After</button>
+        </div>
 
-      <!-- Before grid -->
-      <div class="ba-panel ba-panel--active" id="bathroom-before" role="tabpanel" aria-labelledby="tab-before">
-        <div class="gallery-grid">
-          <div class="gallery-item">
-            <img src="assets/Bathroom1_Before_P1.jpeg" alt="Dirty shower before cleaning">
+        <!-- Before grid -->
+        <div class="ba-panel ba-panel--active" id="bathroom-before" role="tabpanel" aria-labelledby="tab-before">
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img src="assets/Bathroom1_Before_P1.jpeg" alt="Dirty shower before cleaning">
+            </div>
+            <div class="gallery-item">
+              <img src="assets/Bathroom1_Before_P2.jpeg" alt="Grimy shower tiles before cleaning">
+            </div>
+            <div class="gallery-item">
+              <img src="assets/Bathroom1_Before_P3.jpeg" alt="Bathroom before cleaning — angle 3">
+            </div>
+            <div class="gallery-item">
+              <img src="assets/Bathroom1_Before_P4.jpeg" alt="Bathroom before cleaning — angle 4">
+            </div>
+            <div class="gallery-item">
+              <img src="assets/Bathroom1_Before_P6.jpeg" alt="Bathroom before cleaning — angle 5">
+            </div>
+            <div class="gallery-item">
+              <img src="assets/Bathroom1_Before_P7.jpeg" alt="Bathroom before cleaning — angle 6">
+            </div>
           </div>
-          <div class="gallery-item">
-            <img src="assets/Bathroom1_Before_P2.jpeg" alt="Grimy shower tiles before cleaning">
-          </div>
-          <div class="gallery-item">
-            <img src="assets/Bathroom1_Before_P3.jpeg" alt="Bathroom before cleaning — angle 3">
-          </div>
-          <div class="gallery-item">
-            <img src="assets/Bathroom1_Before_P4.jpeg" alt="Bathroom before cleaning — angle 4">
-          </div>
-          <div class="gallery-item">
-            <img src="assets/Bathroom1_Before_P6.jpeg" alt="Bathroom before cleaning — angle 5">
-          </div>
-          <div class="gallery-item">
-            <img src="assets/Bathroom1_Before_P7.jpeg" alt="Bathroom before cleaning — angle 6">
+        </div>
+
+        <!-- After grid -->
+        <div class="ba-panel" id="bathroom-after" role="tabpanel" aria-labelledby="tab-after">
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img src="assets/Bathroom1_P1.jpeg" alt="Clean bathroom floor after deep clean">
+            </div>
+            <div class="gallery-item">
+              <img src="assets/Bathroom1_P2.jpeg" alt="Spotless bathroom tiles after cleaning">
+            </div>
+            <div class="gallery-item">
+              <img src="assets/Bathroom1_P3.jpeg" alt="Gleaming chrome bath fittings after cleaning">
+            </div>
+            <div class="gallery-item">
+              <img src="assets/Bathroom1_P4.jpeg" alt="Clean bathroom after deep clean — angle 4">
+            </div>
+            <div class="gallery-item">
+              <img src="assets/Bathroom1_P5.jpeg" alt="Clean bathroom after deep clean — angle 5">
+            </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- After grid -->
-      <div class="ba-panel" id="bathroom-after" role="tabpanel" aria-labelledby="tab-after">
-        <div class="gallery-grid">
-          <div class="gallery-item">
-            <img src="assets/Bathroom1_P1.jpeg" alt="Clean bathroom floor after deep clean">
+  <!-- ===================== OVEN TRANSFORMATION ===================== -->
+  <section class="section" style="background:var(--navy);padding:80px 0;" aria-labelledby="oven-heading">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="label label--white">Oven Deep Clean</span>
+        <h2 id="oven-heading" style="color:var(--white);">The clean landlords check first.</h2>
+        <p style="color:rgba(255,255,255,0.7);font-size:0.95rem;max-width:520px;margin:0 auto;">Ovens are one of the top reasons deposits are withheld. We strip them back to spotless every time.</p>
+      </div>
+
+      <div class="ba-tab-group">
+        <div class="ba-tabs" role="tablist" aria-label="Oven before and after views">
+          <button class="ba-tab ba-tab--light ba-tab--active" role="tab" aria-selected="true" aria-controls="oven-before" id="oven-tab-before" data-target="oven-before">Before</button>
+          <button class="ba-tab ba-tab--light" role="tab" aria-selected="false" aria-controls="oven-after" id="oven-tab-after" data-target="oven-after">After</button>
+        </div>
+
+        <div class="ba-panel ba-panel--active" id="oven-before" role="tabpanel" aria-labelledby="oven-tab-before">
+          <div class="gallery-grid gallery-grid--2">
+            <div class="gallery-item">
+              <img src="assets/Oven_Before1.png" alt="Oven interior before cleaning — heavy grease build-up">
+              <span class="results-tag">Before</span>
+            </div>
+            <div class="gallery-item">
+              <img src="assets/Oven_Before2.png" alt="Oven before deep cleaning — angle 2">
+              <span class="results-tag">Before</span>
+            </div>
           </div>
-          <div class="gallery-item">
-            <img src="assets/Bathroom1_P2.jpeg" alt="Spotless bathroom tiles after cleaning">
-          </div>
-          <div class="gallery-item">
-            <img src="assets/Bathroom1_P3.jpeg" alt="Gleaming chrome bath fittings after cleaning">
-          </div>
-          <div class="gallery-item">
-            <img src="assets/Bathroom1_P4.jpeg" alt="Clean bathroom after deep clean — angle 4">
-          </div>
-          <div class="gallery-item">
-            <img src="assets/Bathroom1_P5.jpeg" alt="Clean bathroom after deep clean — angle 5">
+        </div>
+
+        <div class="ba-panel" id="oven-after" role="tabpanel" aria-labelledby="oven-tab-after">
+          <div class="gallery-grid gallery-grid--2">
+            <div class="gallery-item">
+              <img src="assets/Oven_After1.png" alt="Oven after deep cleaning — spotless interior">
+              <span class="results-tag">After</span>
+            </div>
+            <div class="gallery-item">
+              <img src="assets/Oven_After2.png" alt="Oven after deep cleaning — angle 2">
+              <span class="results-tag">After</span>
+            </div>
           </div>
         </div>
       </div>
@@ -288,22 +334,23 @@
     update(50);
   });
 
-  // Before/After tab toggle
-  document.querySelectorAll('.ba-tab').forEach(function(tab) {
-    tab.addEventListener('click', function() {
-      var target = this.dataset.target;
-      var tabs = document.querySelectorAll('.ba-tab');
-      var panels = document.querySelectorAll('.ba-panel');
+  // Before/After tab toggle — scoped per .ba-tab-group
+  document.querySelectorAll('.ba-tab-group').forEach(function(group) {
+    var tabs = group.querySelectorAll('.ba-tab');
+    var panels = group.querySelectorAll('.ba-panel');
 
-      tabs.forEach(function(t) {
-        t.classList.remove('ba-tab--active');
-        t.setAttribute('aria-selected', 'false');
+    tabs.forEach(function(tab) {
+      tab.addEventListener('click', function() {
+        tabs.forEach(function(t) {
+          t.classList.remove('ba-tab--active');
+          t.setAttribute('aria-selected', 'false');
+        });
+        panels.forEach(function(p) { p.classList.remove('ba-panel--active'); });
+
+        this.classList.add('ba-tab--active');
+        this.setAttribute('aria-selected', 'true');
+        document.getElementById(this.dataset.target).classList.add('ba-panel--active');
       });
-      panels.forEach(function(p) { p.classList.remove('ba-panel--active'); });
-
-      this.classList.add('ba-tab--active');
-      this.setAttribute('aria-selected', 'true');
-      document.getElementById(target).classList.add('ba-panel--active');
     });
   });
 </script>
